@@ -1,0 +1,10 @@
+query{
+    getAllFlightDetails: async () => {
+            try {
+                return await flight_details.findAll();
+            } catch(e) {
+                throw new Error("Error fetching flights");
+            }
+        }
+    
+}

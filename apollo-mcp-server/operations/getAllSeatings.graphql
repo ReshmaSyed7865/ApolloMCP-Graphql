@@ -1,0 +1,10 @@
+query
+{
+    getAllSeatings: async () => {
+            try {
+                return await seating.findAll();
+            } catch(e) {
+                throw new Error("Error fetching seats");
+            }
+        }
+}

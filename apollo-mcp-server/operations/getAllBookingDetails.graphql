@@ -1,0 +1,9 @@
+query{
+    getAllBookingDetails: async () => {
+            try {
+                return await booking_details.findAll();
+            } catch(e) {
+                throw new Error("Error fetching bookings");
+            }
+        }
+    }

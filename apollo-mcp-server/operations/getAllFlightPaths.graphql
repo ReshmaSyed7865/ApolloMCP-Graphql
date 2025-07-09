@@ -1,0 +1,9 @@
+query {
+ getAllFlightPaths: async () => {
+            try {
+                return await flight_path.findAll();
+            } catch(e) {
+                throw new Error("Error fetching flights");
+            }
+ }
+}
